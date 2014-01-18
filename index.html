@@ -1,79 +1,262 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="プレビュー至上主義 : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>プレビュー至上主義</title>
+    <meta charset="utf-8">
+    <title>プレビュー至上主義 - cmu12</title>
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/cognitom/presentation-cmu12">View on GitHub</a>
-
-          <h1 id="project_title">プレビュー至上主義</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/cognitom/presentation-cmu12/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/cognitom/presentation-cmu12/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">プレビュー至上主義 maintained by <a href="https://github.com/cognitom">cognitom</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
+    <!-- ヘッダー-->
+    <header>
+      <h1>creators_meetup</h1>
+    </header>
+    <!-- 表紙スライド-->
+    <section class="cover">
+      <h2>「プレビュー至上主義」</h2>
+      <p class="cover-lead">プログラマが「テストファースト」を唱えるなら、デザイナが主張すべきは何? それが「プレビュー至上主義」。書くより先に見る、書きながら見る、しかもほぼ最終成果物に近い形で。</p>
+      <p class="cover-author">河村 奨 (かわむらつとむ)</p>
+    </section>
+    <!-- スライド-->
+    <section id="p0" class="slide">
+      <figure><img src="images/slide.2.png"></figure>
+    </section>
+    <section id="p1" class="slide">
+      <h3>好きなことはなしていいらしい。なにはなそう?</h3>
+      <p>レスポンシブ、インブラウザデザイン、脱Photoshopの波など、ここ数年、色々ありました。それをふまえて...</p>
+      <ul>
+        <li>ライブプレビュー</li>
+        <li>少なくとも、ライブリロード</li>
+        <li>ロジックレステンプレート (たぶん時間ないので、よかったら後で〜)</li>
+      </ul>
+    </section>
+    <section id="p2" class="slide">
+      <h3>GUIツール不在のWEBデザイン業界</h3>
+      <p>今年2014年になって、ツールがちらほらと...。でも、ドロー系UIの限界が。どこまで使えるんだろう?</p>
+      <ul>
+        <li>Adobe Edge Reflow</li>
+        <li>Pine Grow ※Bootstrap専用のビジュアルエディタ</li>
+      </ul>
+    </section>
+    <section id="p3" class="slide">
+      <figure><img src="images/fig.1.png"></figure>
+    </section>
+    <section id="p4" class="slide">
+      <figure><img src="images/fig.2.png"></figure>
+    </section>
+    <section id="p5" class="slide">
+      <h3>GUIに対する不安</h3>
+      <ul>
+        <li>最新ブラウザとの実装の乖離しない?</li>
+        <li>jQueryやBootstrapの最新版動くの?</li>
+        <li>JavaScriptで動的なページ・連携の自由度が下がらない?</li>
+        <li>2次元じゃないもの、変化するものを「グラフィックス」としてデザインできるの?</li>
+      </ul>
+    </section>
+    <section id="p6" class="slide">
+      <h3>とはいえ。</h3>
+      <p>デザイナーが文字を見てデザインするのは、そろそろ限界です。</p>
+      <ul>
+        <li>今の現状を例えるなら...</li>
+      </ul>
+    </section>
+    <section id="p7" class="slide">
+      <h3>釉薬をかけて陶器を焼くようなもの</h3>
+      <p>窯を開けるまで、どうなっているか分からない</p>
+      <ul>
+        <li>ブラウザで開き直すまで分からない (経験に頼るしかない)</li>
+      </ul>
+    </section>
+    <section id="p8" class="slide">
+      <figure><img src="images/fig.3.jpg"></figure>
+    </section>
+    <section id="p9" class="slide">
+      <h3>Live Reloadがあるじゃない?</h3>
+      <p>ファイル保存したタイミングで、リロードしてくれる便利ツール。</p>
+      <ul>
+        <li>HTML/CSSの保存時に</li>
+        <li>CoffeeScript/LESS/Sassの保存時に</li>
+        <li>1日の cmd+R 押下回数が激減</li>
+        <li>でも、CSSについては不十分...(涙)</li>
+      </ul>
+    </section>
+    <section id="p10" class="slide">
+      <figure><img src="images/LiveReload.png"></figure>
+    </section>
+    <section id="p11" class="slide">
+      <h3>Q. 保存するのめんどくさいですけど。</h3>
+      <p>リアルタイム大事。</p>
+      <ul>
+        <li>CSSを1文字打つ毎に、変わってほしい。</li>
+        <li>こねてる粘土が手元で見えないとか許せない</li>
+        <li>つまり、「ライブプレビュー」</li>
+      </ul>
+    </section>
+    <section id="p12" class="slide">
+      <h3>Ans. できます。</h3>
+      <p>Espressoユーザには当たり前。去年から他のツールも出て来た。</p>
+      <ul>
+        <li>Espresso (CSSEditから機能統合)</li>
+        <li>Brackets (オープンソース!!)</li>
+        <li>Sublime Text + LiveStyle</li>
+        <li>Firefox</li>
+      </ul>
+    </section>
+    <section id="p13" class="slide">
+      <figure><img src="images/Espresso.png"></figure>
+    </section>
+    <section id="p14" class="slide">
+      <figure><img src="images/Brackets.png"></figure>
+    </section>
+    <section id="p15" class="slide">
+      <figure><img src="images/Livestyle.png"></figure>
+    </section>
+    <section id="p16" class="slide">
+      <h3>ビバ、ライブプレビュー!</h3>
+      <p>ライブリロードとはまったく別物。どのくらい違うかと言うと、強化学習と教師付き学習くらい違う。</p>
+      <ul>
+        <li>「これなら絵筆になるよ!」</li>
+        <li>「コーディングを分離しなくてもデザインプロセスで使えるよ!」</li>
+        <li>「それ、何が美味しいの?」</li>
+      </ul>
+    </section>
+    <section id="p17" class="slide">
+      <h3>ひとつだけ残念なお知らせ</h3>
+      <p>LESS/Sass使えません &gt;&lt;</p>
+      <ul>
+        <li>ルート1 : SMACSS + cssjoin (私はこっち)</li>
+        <li>ルート2 : もうちょっと待つ</li>
+      </ul>
+    </section>
+    <section id="p18" class="slide">
+      <figure><img src="images/SMACSS.png"></figure>
+    </section>
+    <section id="p19" class="slide">
+      <h3>takana... 高菜?</h3>
+      <p>Takana lets you see your Sass, LESS and CSS style changes live, in the browser. Less time checking, more time hacking. - usetakana.com</p>
+      <ul>
+        <li>開発状況 : クローズドベータ (最近、音沙汰ないけど)</li>
+        <li>Sassでも、LESSでも、CSSでもどんと来い</li>
+        <li>Sublime Text で編集すると、ブラウザ内を随時書き換え</li>
+        <li>リロードではない ← これ大事!</li>
+      </ul>
+    </section>
+    <section id="p20" class="slide">
+      <figure><img src="images/takana.png"></figure>
+    </section>
+    <section id="p21" class="slide">
+      <h3>LiveStyleにも動きが</h3>
+      <ul>
+        <li>「LiveStyleの最終ゴールは、LESS/Sassのコンパイルとかせこい話じゃなくて、コードとブラウザコンテンツが、双方向に編集可能になることさ!」</li>
+        <li>「今、Emmet1.1で忙しいから、ほっといて!」</li>
+      </ul>
+    </section>
+    <section id="p22" class="slide">
+      <figure><img src="images/Livestyle-milestone2.png"></figure>
+    </section>
+    <section id="p23" class="slide">
+      <h3>ライブプレビューの必要がないものは、ライブリロードでOK</h3>
+      <p>サポートしてくれる、強力なツールたち</p>
+      <ul>
+        <li>Grunt (Node.js)</li>
+        <li>Guard (Ruby)</li>
+        <li>Middleman (Ruby)</li>
+        <li>CodeKit (GUI)</li>
+        <li>WebCode (GUI) ... etc.</li>
+      </ul>
+    </section>
+    <section id="p24" class="slide">
+      <h3>Gruntが良いです。</h3>
+      <p>CodeKitの設定メンドクサイ。設定ファイルはCoffeeでもOK。</p>
+      <ul>
+        <li>タスクランナー</li>
+        <li>ファイルの変更をウォッチすることも可能</li>
+        <li>大量のプラグインが存在</li>
+        <li>インストールも簡単</li>
+      </ul>
+    </section>
+    <section id="p25" class="slide">
+      <figure><img src="images/grunt.png"></figure>
+    </section>
+    <section id="p26" class="slide">
+      <h3>環境構築 for Mac</h3>
+      <p>Nodeをインストールして...</p>
+      <ul>
+        <li>$ sudo npm install -g bower</li>
+        <li>$ sudo npm install -g grunt-cli</li>
+      </ul>
+    </section>
+    <section id="p27" class="slide">
+      <figure><img src="images/install-node.png"></figure>
+    </section>
+    <section id="p28" class="slide">
+      <h3>(説明略)</h3>
+      <p>設定ファイルがすでにある場合はこんな感じ。</p>
+      <ul>
+        <li>$ cd /path/to/here</li>
+        <li>$ bower install</li>
+        <li>$ npm install</li>
+        <li>$ grunt</li>
+      </ul>
+    </section>
+    <section id="p29" class="slide">
+      <h3>Grunt Watch の使い方</h3>
+      <p>これだけ↓</p>
+      <ul>
+        <li>$ grunt watch</li>
+      </ul>
+    </section>
+    <section id="p30" class="slide">
+      <h3>「設定ファイル書くのとかありえない」</h3>
+      <p>Yeomanっていうおっちゃんがよしなにしてくれます。</p>
+      <ul>
+        <li>Grunt : ライブリロード、タスクランナー</li>
+        <li>Bower : JavaScript, CSSのパッケージ管理</li>
+        <li>Yeoman : ディレクトリ構成込みでBowerとGruntを設定</li>
+      </ul>
+    </section>
+    <section id="p31" class="slide">
+      <figure><img src="images/yeoman.png"></figure>
+    </section>
+    <section id="p32" class="slide">
+      <h3>最後に...</h3>
+    </section>
+    <section id="p33" class="slide">
+      <h3>ライブリロード各種実演</h3>
+      <p>「この包丁キュウリがくっつかないんです」</p>
+      <ul>
+        <li>CoffeeScript : JavaScriptへ</li>
+        <li>Webフォント : SVG → フォント + CSS</li>
+        <li>HTMLメタ言語 : Slim, Jadeなど → HTML</li>
+        <li>json : 今回はJadeテンプレートに入れるダミーデータとして</li>
+      </ul>
+    </section>
+    <section id="p34" class="slide">
+      <h3>ご清聴ありがとうございました</h3>
+      <p>よければ、こちらをお持ち帰りください。</p>
+      <ul>
+        <li>デザイナーなら、ライブプレビュー</li>
+        <li>それ以外は、Gruntでなんでもライブリロード</li>
+      </ul>
+    </section>
+    <section id="p35" class="slide">
+      <h3>つまり、プレビュー至上主義</h3>
+    </section>
+    <!-- フッター-->
+    <footer>
+      <p>Thank you!</p>
+      <figure><img src="images/user-cognitom.jpg" class="avatar-user"></figure>
+      <ul>
+        <li>
+          <s>facebook</s>facebook.com/cognitom
+        </li>
+        <li>
+          <s>twitter</s>@cognitom
+        </li>
+      </ul>
+    </footer>
+    <div data-background="images/space-osscafe.jpg" class="bigphoto"></div>
+    <!-- スクリプト-->
+    <script src="js/main.js"></script>
   </body>
 </html>
