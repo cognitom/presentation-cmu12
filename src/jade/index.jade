@@ -1,0 +1,48 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    title プレビュー至上主義 - cmu12
+    meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" name="viewport")
+    link(href= paths.style_css rel="stylesheet")
+    
+  body
+    // ヘッダー
+    header
+      h1 creators_meetup
+      
+    // 表紙スライド
+    section.cover
+      h2 「プレビュー至上主義」
+      p.cover-lead プログラマが「テストファースト」を唱えるなら、デザイナが主張すべきは何? それが「プレビュー至上主義」。書くより先に見る、書きながら見る、しかもほぼ最終成果物に近い形で。
+      p.cover-author 河村 奨 (かわむらつとむ)
+      
+    // スライド
+    each s, idx in slides
+      section.slide(id="p#{idx}")
+        if s.title
+          h3= s.title
+        if s.figure
+          figure: img(src=s.figure)
+        if s.desc
+          p= s.desc
+        if s.list
+          ul
+            each i in s.list
+              li= i
+    
+    // フッター
+    footer
+      p Thank you!
+      figure
+        img.avatar-user(src=author.picture)
+      ul
+        each val, idx in author.socials
+          li
+            s= idx
+            | #{val}
+    .bigphoto(data-background=cover.photo)
+    
+    // スクリプト
+    script(src=paths.main_js)
+    

@@ -1,0 +1,13 @@
+/*!
+ * ベースのスタイル
+ */
+
+body {
+  background: #F0F0F0;
+  color: #4a4a4a;
+  font-size: 20px;
+}
+header > h1 {
+}
+a {
+}

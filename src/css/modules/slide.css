@@ -1,0 +1,62 @@
+/*!
+ * スライドのスタイル
+ */
+ 
+.slide {
+  padding: 2em 2em 6em 4em;
+  margin: 0;
+  background: #F0F0F0;
+  /*min-height: 18em;*/
+}
+.slide:nth-of-type(2n) {
+  background: #736357;
+  color: #fff;
+}
+.slide#p2 {
+  background: #736357;
+}
+.slide h3 {
+  font-size: 150%;
+  font-weight: normal;
+}
+.slide h3:before {
+  font-family: "cmu";
+	text-rendering:optimizeLegibility;
+	-webkit-font-smoothing:antialiased;
+  content: "anchor";
+  margin-left: -1.3em;
+  margin-right: .3em;
+  color: rgba(0,0,0,.3);
+}
+.slide:nth-of-type(2n) h3:before {
+  color: rgba(255,255,255,.3);
+}
+.slide p {
+  margin: 1em 0;
+}
+.slide figure {
+  margin: -2em -2em -6em -4em;
+}
+.slide figure img {
+  width: 100%;
+}
+.slide ul {
+  list-style: none;
+  padding: 0 0 0 1em;
+}
+.slide li {
+  margin: .5em 0;
+  position: relative;
+}
+.slide li:before {
+  font-family: "cmu";
+	text-rendering:optimizeLegibility;
+	-webkit-font-smoothing:antialiased;
+  content: "caret_right";
+  position: absolute;
+  left: -.9em;
+  color: rgba(0,0,0,.3);
+}
+.slide:nth-of-type(2n) li:before {
+  color: rgba(255,255,255,.3);
+}

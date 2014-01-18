@@ -1,0 +1,24 @@
+{
+  "name": "cmu12",
+  "version": "0.0.1",
+  "authors": [
+    "Tsutomu Kawamura <kawamura@coworking.coop>"
+  ],
+  "main": "",
+  "license": "",
+  "homepage": "http://madakimetenaiyo.dom/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.3",
+    "respond": "~1.4.2",
+    "html5shiv": "~3.7.0",
+    "modernizr": "~2.7.1"
+  }
+}

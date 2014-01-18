@@ -1,0 +1,30 @@
+/*!
+ * ヘッダーのスタイル
+ */
+
+body > header {
+  padding: 2em;
+  height: 15em;
+  text-align: center;
+  background: #fff;
+  /* 以下はデモで消す */
+  background: rgba(0,0,0,.3);
+  color: #FFF;
+}
+body > header h1 {
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  margin: 0;
+  /* 以下はデモで消す */
+  font-family: "cmu";
+  font-size: 1000%;
+}
+body > header a,
+body > header a:hover {
+  color: #fff;
+}
+@media only screen and (min-width: 720px) {
+  body > header {
+    display: block;
+  }
+}

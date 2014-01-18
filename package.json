@@ -1,0 +1,27 @@
+{
+  "name": "cmu12",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tsutomu Kawamura <kawamura@coworking.coop>",
+  "license": "",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-coffee": "~0.8.0",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-less": "~0.8.3",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-cssjoin": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-concat": "~0.3.0",
+    "time-grunt": "~0.2.7",
+    "grunt-webfont": "~0.2.2",
+    "grunt-slim": "~0.1.0",
+    "grunt-contrib-jade": "~0.9.1",
+    "load-grunt-tasks": "~0.2.1"
+  }
+}

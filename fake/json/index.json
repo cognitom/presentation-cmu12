@@ -1,0 +1,245 @@
+{
+  "paths": {
+    "search": "search.html",
+    "style_css": "../../src/css/style.css",
+    "main_js": "../js/main.js",
+    "ie_js": "../js/ie.js"
+  },
+  "author": {
+    "name": "河村 奨",
+    "picture": "../../fake/images/user-cognitom.jpg",
+    "socials": {
+      "facebook": "facebook.com/cognitom",
+      "twitter": "@cognitom"
+    }
+  },
+  "cover": {
+    "photo": "../../fake/images/space-osscafe.jpg"
+  },
+  "slides": [
+    {
+      "figure": "../../fake/images/slide.2.png"
+    },
+    {
+      "title": "好きなことはなしていいらしい。なにはなそう?",
+      "desc": "レスポンシブ、インブラウザデザイン、脱Photoshopの波など、ここ数年、色々ありました。それをふまえて...",
+      "list": [
+        "ライブプレビュー",
+        "少なくとも、ライブリロード",
+        "ロジックレステンプレート (たぶん時間ないので、よかったら後で〜)"
+      ]
+    },
+    {
+      "title": "GUIツール不在のWEBデザイン業界",
+      "desc": "今年2014年になって、ツールがちらほらと...。でも、ドロー系UIの限界が。どこまで使えるんだろう?",
+      "list": [
+        "Adobe Edge Reflow",
+        "Pine Grow ※Bootstrap専用のビジュアルエディタ"
+      ]
+    },
+    {
+      "figure": "../../fake/images/fig.1.png"
+    },
+    {
+      "figure": "../../fake/images/fig.2.png"
+    },
+    {
+      "title": "GUIに対する不安",
+      "list": [
+        "最新ブラウザとの実装の乖離しない?",
+        "jQueryやBootstrapの最新版動くの?",
+        "JavaScriptで動的なページ・連携の自由度が下がらない?",
+        "2次元じゃないもの、変化するものを「グラフィックス」としてデザインできるの?"
+      ]
+    },
+    {
+      "title": "とはいえ。",
+      "desc": "デザイナーが文字を見てデザインするのは、そろそろ限界です。",
+      "list": [
+        "今の現状を例えるなら..."
+      ]
+    },
+    {
+      "title": "釉薬をかけて陶器を焼くようなもの",
+      "desc": "窯を開けるまで、どうなっているか分からない",
+      "list": [
+        "ブラウザで開き直すまで分からない (経験に頼るしかない)"
+      ]
+    },
+    {
+      "figure": "../../fake/images/fig.3.jpg"
+    },
+    {
+      "title": "Live Reloadがあるじゃない?",
+      "desc": "ファイル保存したタイミングで、リロードしてくれる便利ツール。",
+      "list": [
+        "HTML/CSSの保存時に",
+        "CoffeeScript/LESS/Sassの保存時に",
+        "1日の cmd+R 押下回数が激減",
+        "でも、CSSについては不十分...(涙)"
+      ]
+    },
+    {
+      "figure": "../../fake/images/LiveReload.png"
+    },
+    {
+      "title": "Q. 保存するのめんどくさいですけど。",
+      "desc": "リアルタイム大事。",
+      "list": [
+        "CSSを1文字打つ毎に、変わってほしい。",
+        "こねてる粘土が手元で見えないとか許せない",
+        "つまり、「ライブプレビュー」"
+      ]
+    },
+    {
+      "title": "Ans. できます。",
+      "desc": "Espressoユーザには当たり前。去年から他のツールも出て来た。",
+      "list": [
+        "Espresso (CSSEditから機能統合)",
+        "Brackets (オープンソース!!)",
+        "Sublime Text + LiveStyle",
+        "Firefox"
+      ]
+    },
+    {
+      "figure": "../../fake/images/Espresso.png"
+    },
+    {
+      "figure": "../../fake/images/Brackets.png"
+    },
+    {
+      "figure": "../../fake/images/Livestyle.png"
+    },
+    {
+      "title": "ビバ、ライブプレビュー!",
+      "desc": "ライブリロードとはまったく別物。どのくらい違うかと言うと、強化学習と教師付き学習くらい違う。",
+      "list": [
+        "「これなら絵筆になるよ!」",
+        "「コーディングを分離しなくてもデザインプロセスで使えるよ!」",
+        "「それ、何が美味しいの?」"
+      ]
+    },
+    {
+      "title": "ひとつだけ残念なお知らせ",
+      "desc": "LESS/Sass使えません ><",
+      "list": [
+        "ルート1 : SMACSS + cssjoin (私はこっち)",
+        "ルート2 : もうちょっと待つ"
+      ]
+    },
+    {
+      "figure": "../../fake/images/SMACSS.png"
+    },
+    {
+      "title": "takana... 高菜?",
+      "desc": "Takana lets you see your Sass, LESS and CSS style changes live, in the browser. Less time checking, more time hacking. - usetakana.com",
+      "list": [
+        "開発状況 : クローズドベータ (最近、音沙汰ないけど)",
+        "Sassでも、LESSでも、CSSでもどんと来い",
+        "Sublime Text で編集すると、ブラウザ内を随時書き換え",
+        "リロードではない ← これ大事!"
+      ]
+    },
+    {
+      "figure": "../../fake/images/takana.png"
+    },
+    {
+      "title": "LiveStyleにも動きが",
+      "list": [
+        "「LiveStyleの最終ゴールは、LESS/Sassのコンパイルとかせこい話じゃなくて、コードとブラウザコンテンツが、双方向に編集可能になることさ!」",
+        "「今、Emmet1.1で忙しいから、ほっといて!」"
+      ]
+    },
+    {
+      "figure": "../../fake/images/Livestyle-milestone2.png"
+    },
+    {
+      "title": "ライブプレビューの必要がないものは、ライブリロードでOK",
+      "desc": "サポートしてくれる、強力なツールたち",
+      "list": [
+        "Grunt (Node.js)",
+        "Guard (Ruby)",
+        "Middleman (Ruby)",
+        "CodeKit (GUI)",
+        "WebCode (GUI) ... etc."
+      ]
+    },
+    {
+      "title": "Gruntが良いです。",
+      "desc": "CodeKitの設定メンドクサイ。設定ファイルはCoffeeでもOK。",
+      "list": [
+        "タスクランナー",
+        "ファイルの変更をウォッチすることも可能",
+        "大量のプラグインが存在",
+        "インストールも簡単"
+      ]
+    },
+    {
+      "figure": "../../fake/images/grunt.png"
+    },
+    {
+      "title": "環境構築 for Mac",
+      "desc": "Nodeをインストールして...",
+      "list": [
+        "$ sudo npm install -g bower",
+        "$ sudo npm install -g grunt-cli"
+      ]
+    },
+    {
+      "figure": "../../fake/images/install-node.png"
+    },
+    {
+      "title": "(説明略)",
+      "desc": "設定ファイルがすでにある場合はこんな感じ。",
+      "list": [
+        "$ cd /path/to/here",
+        "$ bower install",
+        "$ npm install",
+        "$ grunt"
+      ]
+    },
+    {
+      "title": "Grunt Watch の使い方",
+      "desc": "これだけ↓",
+      "list": [
+        "$ grunt watch"
+      ]
+    },
+    {
+      "title": "「設定ファイル書くのとかありえない」",
+      "desc": "Yeomanっていうおっちゃんがよしなにしてくれます。",
+      "list": [
+        "Grunt : ライブリロード、タスクランナー",
+        "Bower : JavaScript, CSSのパッケージ管理",
+        "Yeoman : ディレクトリ構成込みでBowerとGruntを設定"
+      ]
+    },
+    {
+      "figure": "../../fake/images/yeoman.png"
+    },
+    {
+      "title": "最後に..."
+    },
+    {
+      "title": "ライブリロード各種実演",
+      "desc": "「この包丁キュウリがくっつかないんです」",
+      "list": [
+        "CoffeeScript : JavaScriptへ",
+        "Webフォント : SVG → フォント + CSS",
+        "HTMLメタ言語 : Slim, Jadeなど → HTML",
+        "json : 今回はJadeテンプレートに入れるダミーデータとして"
+      ]
+    },
+    {
+      "title": "ご清聴ありがとうございました",
+      "desc": "よければ、こちらをお持ち帰りください。",
+      "list": [
+        "デザイナーなら、ライブプレビュー",
+        "それ以外は、Gruntでなんでもライブリロード"
+      ]
+    },
+    {
+      "title": "つまり..."
+    }
+  ]
+}

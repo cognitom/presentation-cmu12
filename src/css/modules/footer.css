@@ -1,0 +1,28 @@
+/*!
+ * フッターのスタイル
+ */
+
+body > footer {
+  padding: 4em;
+  text-align: center;
+  background: #F0F0F0;
+  color: #999;
+}
+body > footer p {
+  margin-top: .7em;
+  font-size: 250%;
+  font-family: "Lobster 1.4";
+}
+body > footer figure {
+  padding: 1em;
+}
+body > footer ul {
+  list-style: none;
+  padding: 0;
+}
+body > footer li {
+}
+body > footer li s {
+  font-size: 100%;
+  margin-right: .2em;
+}

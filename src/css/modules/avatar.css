@@ -1,0 +1,9 @@
+/*!
+ * アバターのスタイル
+ */
+
+.avatar-user {
+  width: 6em;
+  height: 6em;
+  border-radius: 3em;
+}
