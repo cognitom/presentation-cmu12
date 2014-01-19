@@ -22,7 +22,7 @@ module.exports = (grunt) ->
         options:
           pretty : true
           data: (dest, src) ->
-            require dest.replace /^int\/html\/(.+)\.html$/, "./fake/json/$1.json"
+            require dest.replace /^int\/html\/(.+)\.html$/, "./src/json/$1.json"
     webfont: #WebFontのビルド
       dev:
         src: 'src/icons/*.svg'
@@ -63,12 +63,21 @@ module.exports = (grunt) ->
           expand: true
           dest: 'dist/'
           cwd: 'int/'
-          src: ['fonts/**', 'js/ie.js']
+          src: ['fonts/**']
         ,
           expand: true
           dest: 'dist/'
           cwd: 'src/'
           src: ['images/**']
+        ]
+      dist_html:
+        options:
+          process: (content, srcpath) -> content.replace(/\.\.\/src\//g, "").replace(/\.\.\//g, "")
+        files: [
+          expand: true
+          dest: 'dist/'
+          cwd: 'int/html'
+          src: ['**']
         ]
     #監視用の設定
     watch:
@@ -93,7 +102,7 @@ module.exports = (grunt) ->
         files: ['src/icons/*.svg']
         tasks: ['webfont']
       jade:
-        files: ['src/jade/*.jade', 'fake/json/*.json']
+        files: ['src/jade/*.jade', 'src/json/*.json']
         tasks: ['jade']
           
   require('load-grunt-tasks')(grunt)

@@ -3,14 +3,14 @@
  */
  
 .cover {
-  padding: 2em;
+  padding: 2em 0em;
   margin: 0;
   background: rgba(240,240,240,.95);
 }
 .cover h2 {
   text-align: center;
   font-weight: normal;
-  font-size: 250%;
+  font-size: 140%;
   margin-bottom: 1em;
   color: rgba(0,0,0,.3);
 }
@@ -18,10 +18,20 @@
   padding-left: 1.5em;
   border-left: 4px solid rgba(0,0,0,.2);
   color: rgba(0,0,0,.5);
+  margin: 0 .5em;
 }
 .cover-author {
   text-align: center;
   color: rgba(96, 76, 62, 0.82);
   font-size: 120%;
   margin-top: 2em;
+}
+
+@media only screen and (min-width: 480px) {
+  .cover h2 {
+    font-size: 250%;
+  }
+  .cover-lead {
+    margin: 0 2em;
+  }
 }

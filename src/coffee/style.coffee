@@ -8,7 +8,8 @@ nextpage = () ->
   st = $('html, body').scrollTop()
   if p = (() ->
     for elm in $('body > section')
-      return $(elm).offset().top if $(elm).offset().top > st
+      if $(elm).offset().top - 1 > st
+        return $(elm).offset().top
     0
   )()
     $('html, body').animate({ scrollTop: p }, 500) 
@@ -18,7 +19,7 @@ prevpage = () ->
   if p = (() ->
     $elm = null
     for elm in $('body > section')
-      if $(elm).offset().top >= st
+      if $(elm).offset().top + 1 > st
         return if $elm? then $elm.offset().top else 0
       $elm = $(elm)
     0

@@ -9,6 +9,7 @@
     /* @group avatar */     @import 'modules/avatar.css'; /* @end */
     /* @group bigphoto */   @import 'modules/bigphoto.css'; /* @end */
     /* @group cover */      @import 'modules/cover.css'; /* @end */
+    /* @group hello */      @import 'modules/hello.css'; /* @end */
     /* @group footer */     @import 'modules/footer.css'; /* @end */
     /* @group header */     @import 'modules/header.css'; /* @end */
     /* @group slide */      @import 'modules/slide.css'; /* @end */

@@ -2,23 +2,22 @@
   "paths": {
     "search": "search.html",
     "style_css": "../../src/css/style.css",
-    "main_js": "../js/main.js",
-    "ie_js": "../js/ie.js"
+    "main_js": "../js/main.js"
   },
   "author": {
     "name": "河村 奨",
-    "picture": "../../fake/images/user-cognitom.jpg",
+    "picture": "../../src/images/user-cognitom.jpg",
     "socials": {
       "facebook": "facebook.com/cognitom",
       "twitter": "@cognitom"
     }
   },
   "cover": {
-    "photo": "../../fake/images/space-osscafe.jpg"
+    "photo": "../../src/images/space-osscafe.jpg"
   },
   "slides": [
     {
-      "figure": "../../fake/images/slide.2.png"
+      "figure": "../../src/images/slide.2.png"
     },
     {
       "title": "好きなことはなしていいらしい。なにはなそう?",
@@ -38,15 +37,15 @@
       ]
     },
     {
-      "figure": "../../fake/images/fig.1.png"
+      "figure": "../../src/images/fig.1.png"
     },
     {
-      "figure": "../../fake/images/fig.2.png"
+      "figure": "../../src/images/fig.2.png"
     },
     {
       "title": "GUIに対する不安",
       "list": [
-        "最新ブラウザとの実装の乖離しない?",
+        "最新ブラウザと実装が乖離しない?",
         "jQueryやBootstrapの最新版動くの?",
         "JavaScriptで動的なページ・連携の自由度が下がらない?",
         "2次元じゃないもの、変化するものを「グラフィックス」としてデザインできるの?"
@@ -67,7 +66,7 @@
       ]
     },
     {
-      "figure": "../../fake/images/fig.3.jpg"
+      "figure": "../../src/images/fig.3.jpg"
     },
     {
       "title": "Live Reloadがあるじゃない?",
@@ -80,7 +79,7 @@
       ]
     },
     {
-      "figure": "../../fake/images/LiveReload.png"
+      "figure": "../../src/images/LiveReload.png"
     },
     {
       "title": "Q. 保存するのめんどくさいですけど。",
@@ -102,13 +101,13 @@
       ]
     },
     {
-      "figure": "../../fake/images/Espresso.png"
+      "figure": "../../src/images/Espresso.png"
     },
     {
-      "figure": "../../fake/images/Brackets.png"
+      "figure": "../../src/images/Brackets.png"
     },
     {
-      "figure": "../../fake/images/Livestyle.png"
+      "figure": "../../src/images/Livestyle.png"
     },
     {
       "title": "ビバ、ライブプレビュー!",
@@ -128,7 +127,7 @@
       ]
     },
     {
-      "figure": "../../fake/images/SMACSS.png"
+      "figure": "../../src/images/SMACSS.png"
     },
     {
       "title": "takana... 高菜?",
@@ -141,7 +140,7 @@
       ]
     },
     {
-      "figure": "../../fake/images/takana.png"
+      "figure": "../../src/images/takana.png"
     },
     {
       "title": "LiveStyleにも動きが",
@@ -151,7 +150,7 @@
       ]
     },
     {
-      "figure": "../../fake/images/Livestyle-milestone2.png"
+      "figure": "../../src/images/Livestyle-milestone2.png"
     },
     {
       "title": "ライブプレビューの必要がないものは、ライブリロードでOK",
@@ -175,7 +174,7 @@
       ]
     },
     {
-      "figure": "../../fake/images/grunt.png"
+      "figure": "../../src/images/grunt.png"
     },
     {
       "title": "環境構築 for Mac",
@@ -186,7 +185,7 @@
       ]
     },
     {
-      "figure": "../../fake/images/install-node.png"
+      "figure": "../../src/images/install-node.png"
     },
     {
       "title": "(説明略)",
@@ -215,7 +214,7 @@
       ]
     },
     {
-      "figure": "../../fake/images/yeoman.png"
+      "figure": "../../src/images/yeoman.png"
     },
     {
       "title": "最後に..."
@@ -239,7 +238,7 @@
       ]
     },
     {
-      "title": "つまり..."
+      "title": "つまり、プレビュー至上主義。"
     }
   ]
 }

@@ -3,7 +3,7 @@
  */
  
 .slide {
-  padding: 2em 2em 6em 4em;
+  padding: 2em .8em 6em 1.3em;
   margin: 0;
   background: #F0F0F0;
   /*min-height: 18em;*/
@@ -12,12 +12,10 @@
   background: #736357;
   color: #fff;
 }
-.slide#p2 {
-  background: #736357;
-}
 .slide h3 {
   font-size: 150%;
   font-weight: normal;
+  margin-bottom: 1em;
 }
 .slide h3:before {
   font-family: "cmu";
@@ -32,10 +30,10 @@
   color: rgba(255,255,255,.3);
 }
 .slide p {
-  margin: 1em 0;
+  margin: 1em 0 1.5em;
 }
 .slide figure {
-  margin: -2em -2em -6em -4em;
+  margin: -2em -.8em -6em -1.3em;
 }
 .slide figure img {
   width: 100%;
@@ -59,4 +57,13 @@
 }
 .slide:nth-of-type(2n) li:before {
   color: rgba(255,255,255,.3);
+}
+
+@media only screen and (min-width: 480px) {
+  .slide {
+    padding: 2em 2em 6em 4em;
+  }
+  .slide figure {
+    margin: -2em -2em -6em -4em;
+  }
 }
