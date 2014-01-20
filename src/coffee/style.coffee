@@ -4,28 +4,39 @@ $('[data-background]').each () ->
     backgroundImage:'url(' + $(@).attr('data-background') + ')'
     
 #カーソル移動
+sleeping = false 
 nextpage = () ->
-  st = $('html, body').scrollTop()
-  if p = (() ->
-    for elm in $('body > section')
-      if $(elm).offset().top - 1 > st
-        return $(elm).offset().top
-    0
-  )()
-    $('html, body').animate({ scrollTop: p }, 500) 
-    false
+  unless sleeping
+    st = $('html, body').scrollTop()
+    scroll p if p = (() ->
+      for elm in $('body > section')
+        if $(elm).offset().top - 1 > st
+          return $(elm).offset().top
+      0
+    )()
+  false
+    
 prevpage = () ->
-  st = $('html, body').scrollTop()
-  if p = (() ->
-    $elm = null
-    for elm in $('body > section')
-      if $(elm).offset().top + 1 > st
-        return if $elm? then $elm.offset().top else 0
-      $elm = $(elm)
-    0
-  )()
-    $('html, body').animate({ scrollTop: p }, 500) 
-    false
+  unless sleeping
+    st = $('html, body').scrollTop()
+    scroll p if p = (() ->
+      $elm = null
+      for elm in $('body > section')
+        if $(elm).offset().top + 1 > st
+          return if $elm? then $elm.offset().top else 0
+        $elm = $(elm)
+      0
+    )()
+  false
+   
+scroll = (p) ->
+  sleeping = true
+  $('html, body').animate
+    scrollTop: p
+    500
+    'swing'
+    ()->sleeping = false
+    
 $(document).keydown (e) ->
   switch e.which
     when 40 then nextpage()
